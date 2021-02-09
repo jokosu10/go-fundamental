@@ -5,20 +5,21 @@ import "fmt"
 func main() {
 	title := "Golang the best language"
 
+	// print if index from sentence is even
 	for index, letter := range title {
 		if index%2 == 0 {
 			fmt.Println("index : ", index, " Letter :", string(letter))
 		}
 	}
 
-	// huruf vocal a, e, i, o, u
+	// print vocal alphabet a, e, i, o, u
 	for index, letter := range title {
-		// step 1
+		// my problem solving
 		if string(letter) == "a" || string(letter) == "e" || string(letter) == "i" || string(letter) == "o" || string(letter) == "u" {
 			fmt.Println("index : ", index, " Letter :", string(letter))
 		}
 
-		// another step
+		// another step to solve
 		switch string(letter) {
 		case "a", "e", "i", "o", "u":
 			fmt.Println("index : ", index, " Letter :", string(letter))
